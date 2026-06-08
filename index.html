@@ -21,6 +21,9 @@
             margin-bottom: 20px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             text-align: center;
+            position: sticky;
+            top: 10px;
+            z-index: 1000;
         }
         nav a {
             text-decoration: none;
@@ -138,6 +141,31 @@
             color: #555;
             font-size: 0.95em;
         }
+        .blog-post {
+            border-bottom: 2px solid #f4f4f9;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        .blog-post:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .post-meta {
+            color: #7f8c8d;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+        }
+        .post-category {
+            display: inline-block;
+            background: #3498db;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            margin-right: 10px;
+        }
         footer { text-align: center; padding: 20px; color: #95a5a6; font-size: 0.9em; }
         .social-links a { margin: 0 10px; text-decoration: none; color: #34495e; font-weight: bold; }
         .ebook-section {
@@ -151,7 +179,8 @@
     <nav>
         <a href="#inicio">Início</a>
         <a href="#servicos">Serviços</a>
-        <a href="#reflexoes">Reflexões</a>
+        <a href="#blog">Blog</a>
+        <a href="https://concego.github.io/links-uteis/">Links Úteis</a>
     </nav>
 
     <header id="inicio">
@@ -163,7 +192,7 @@
 
     <div class="section">
         <h2>Sobre o Projeto</h2>
-        <p>Liderado por <strong>Anderson Carvalho</strong> e <strong>Adri Lima</strong>, o <strong>Eu Concego Jogar</strong> é um ecossistema focado em inclusão digital e acessibilidade. Unindo vivência prática e conhecimento técnico, transformamos a visão de equipes sobre diversidade e tecnologia.</p>
+        <p>Somos casados, apaixonados por tecnologia e movidos pela missão de tornar o mundo digital um lugar para todos. Anderson é o rosto e a voz por trás do canal <strong>Eu Concego Jogar</strong>, onde explora o universo dos games e da tecnologia sob a perspectiva de quem vive a deficiência visual no dia a dia. Adriele é a parceira de vida e de missão, somando forças para mostrar que a acessibilidade não é apenas uma funcionalidade, mas um direito fundamental à participação e ao lazer.</p>
     </div>
 
     <div class="section" id="servicos">
@@ -194,11 +223,14 @@
             <div class="service-card">
                 <div>
                     <h3>🎶 Mapa do Som</h3>
-                    <p>Método inovador para aprendizado musical inclusivo (foco atual em flauta doce).</p>
+                    <p>Método inovador para aprendizado musical inclusivo. Acesse a V1 gratuitamente ou consulte sobre a nova V2.</p>
                 </div>
                 <div>
-                    <span class="price">A partir de R$ 49,90</span>
-                    <a href="https://wa.me/5532987132634?text=Olá! Tenho interesse no Software Mapa do Som." class="cta-button">Comprar</a>
+                    <div style="margin-bottom: 10px;">
+                        <a href="https://concego.github.io/mapa-do-som/" target="_blank" style="color: #3498db; text-decoration: none; font-weight: bold;">Acessar V1 (Grátis)</a>
+                    </div>
+                    <span class="price">V2: Valor a combinar</span>
+                    <a href="https://wa.me/5532987132634?text=Olá! Tenho interesse na V2 do Software Mapa do Som." class="cta-button">Consultar V2</a>
                 </div>
             </div>
 
@@ -213,6 +245,34 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="section" id="blog">
+        <h2>📝 Blog: Reflexões e Notícias</h2>
+
+        <!-- Post 2 -->
+        <article class="blog-post">
+            <div class="post-meta">
+                <span class="post-category">Mercado</span> 07 de Junho de 2026
+            </div>
+            <h3>Gratuidade até a página 2: A Ironia das Ferramentas "Free"</h3>
+            <p>Recentemente, passamos por uma experiência comum, mas sempre frustrante: tentar automatizar processos em ferramentas que se dizem gratuitas. É a famosa "liberdade vigiada". Você pode usar o terreno, mas se quiser usar uma ferramenta para facilitar seu trabalho (como uma API ou automação), o pedágio aparece.</p>
+            <p>Para quem busca inclusão e independência digital, essa barreira é mais que um incômodo financeiro; é uma trava na produtividade. Por isso, aqui no <strong>Eu Concego Jogar</strong>, estamos priorizando caminhos onde o controle do conteúdo seja real. A verdadeira gratuidade deveria vir com abertura, não com cercas escondidas sob termos de serviço.</p>
+        </article>
+
+        <!-- Post 1 -->
+        <article class="blog-post">
+            <div class="post-meta">
+                <span class="post-category">Inclusão</span> 04 de Junho de 2026
+            </div>
+            <h3>O Entretenimento como Porta de Entrada para o Conhecimento</h3>
+            <p>Quando alguém me pergunta por onde começar a falar sobre acessibilidade, minha resposta é sempre a mesma: pelo desejo. No início da minha jornada, eu queria aprender inglês apenas para uma coisa: conseguir jogar.</p>
+            <p>O que parecia apenas diversão foi, na verdade, o motor que me impulsionou a adquirir conhecimento técnico e linguístico. Hoje, entendo que o jogo é a porta de entrada mais poderosa para a inclusão. Quando um game é acessível, ele não está apenas "permitindo que alguém jogue", ele está convidando essa pessoa a pertencer a uma cultura e a desenvolver habilidades que ela levará para a vida toda.</p>
+            <blockquote style="font-style: italic; background: #f9f9f9; padding: 15px; border-left: 3px solid #2ecc71; margin: 20px 0;">
+                "O jogo foi a porta de entrada para que eu <strong>quisesse</strong> adquirir conhecimento."
+                <br><cite style="font-size: 0.8em; color: #7f8c8d; display: block; margin-top: 5px;">— Anderson Carvalho</cite>
+            </blockquote>
+        </article>
     </div>
 
     <div class="section">
@@ -231,18 +291,6 @@
                 <a href="https://www.youtube.com/watch?v=3Jv0IU2_CL0" target="_blank">▶️ Assistir</a>
             </div>
         </div>
-    </div>
-
-    <div class="section" id="reflexoes">
-        <h2>📝 Reflexões e Notícias</h2>
-        <article style="border-left: 5px solid #3498db; padding-left: 20px;">
-            <p style="color: #7f8c8d; font-size: 0.85em;">04 de Junho de 2026</p>
-            <h3>O Entretenimento como Porta de Entrada para o Conhecimento</h3>
-            <blockquote style="font-style: italic; background: #f9f9f9; padding: 10px; border-left: 3px solid #2ecc71;">
-                "No início, eu queria aprender inglês apenas para jogar... Hoje, entendo que o jogo foi a porta de entrada para que eu <strong>quisesse</strong> adquirir conhecimento." 
-                <br><cite style="font-size: 0.8em; color: #7f8c8d; display: block; margin-top: 5px;">— Reflexão de Anderson Carvalho</cite>
-            </blockquote>
-        </article>
     </div>
 
     <div class="section">
@@ -268,6 +316,22 @@
         <p style="text-align: center; margin-top: 20px;">
             <a href="https://wa.me/5532987132634?text=Olá Anderson! Queria uma dica rápida sobre como tornar meu projeto mais acessível." class="cta-button" style="background: #e67e22;">Quero uma dica!</a>
         </p>
+    </div>
+
+    <div class="section" style="background: #fff8ef; border-left: 5px solid #e67e22;">
+        <h2>🔗 Curadoria: Links Úteis</h2>
+        <p>Acesse nossa lista curada de recursos que realmente funcionam para todo mundo: jogos, ferramentas e reflexões com o selo de aprovação <strong>Eu Concego Jogar</strong>.</p>
+        <a href="https://concego.github.io/links-uteis/" class="cta-button" style="background: #e67e22;">Explorar Links</a>
+    </div>
+
+    <div class="section" id="newsletter" style="background: #f0f7ff; border-left: 5px solid #3498db;">
+        <h2>📩 Newsletter: Pílulas de Inclusão</h2>
+        <p>Receba toda quinta-feira uma "Pílula de Acessibilidade" direto no seu e-mail. Insights curtos, práticos e 100% acessíveis.</p>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeS-xV7bHl1v6-SREo0pY-6x0I0V0I0V0I0V0I0V0I0V0I0V0/formResponse" method="POST" target="_blank">
+            <input type="email" name="emailAddress" placeholder="Seu melhor e-mail" required style="padding: 10px; width: 60%; border-radius: 5px; border: 1px solid #ddd; margin-bottom: 10px;">
+            <br>
+            <button type="submit" class="cta-button" style="background: #3498db; border: none; cursor: pointer;">Quero as Pílulas</button>
+        </form>
     </div>
 
     <div class="section ebook-section">
